@@ -1,0 +1,90 @@
+.fondo-personalizado{
+    background-image: url(/imagenes/Fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-header{
+  max-width: 600px !important;
+  min-width: 200px !important;
+  height: auto;
+}
+
+.btn-custom{
+    background-color: rgb(255, 255, 255) !important; 
+    color: #311745 !important;
+
+}
+
+.btn-custom:hover {
+  background-color: #562A7E !important;
+  color: white !important;
+}
+
+.nav-link{
+    color: white !important;
+    text-shadow: 2px 2px 4px #351454;
+}
+
+.nav-link:hover{
+    color: #311745 !important;
+}
+
+.nav-item{
+    font-size: 1.2rem !important;
+}
+
+.titulo{
+    font-size: 2.4rem;
+    color: #311745 !important;
+    text-shadow: 2px 2px 4px #87719d;
+}
+
+p{
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 2px 2px 4px #87719d;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 72px !important;
+    }
+
+    p {
+        font-size: 32px !important;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    h1 {
+        font-size: 60px !important;
+    }
+
+    p {
+        font-size: 26px !important;
+    }
+
+    .nav-item{
+        font-size: 1.4rem !important;
+    }
+
+    .btn-custom{
+        background-color: rgb(255, 255, 255) !important; 
+        color: #311745 !important;
+        font-size: 2rem;
+        padding: 0.8rem 1.2rem !important
+    }
+
+    .vid {
+        width: 60%; 
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .fondo-personalizado {
+        height: 100vh !important;
+    }
+}
