@@ -1,5 +1,5 @@
 .fondo-personalizado{
-    background-image: url(/imagenes/Fondo.png);
+    background-image: url(./imagenes/Fondo.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
