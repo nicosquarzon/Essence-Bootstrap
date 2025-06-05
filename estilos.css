@@ -55,6 +55,10 @@ p{
     text-shadow: 2px 2px 4px #87719d;
 }
 
+.encabezado{
+    background-color: #87719d;
+}
+
 .square-image {
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -78,6 +82,11 @@ p{
 .footer-color{
     background-color: #311745;
 }
+
+.fondo-uno{
+    background-color: #562A7E;
+}
+
 
 @media (max-width: 1024px) {
     .foto-pc {
