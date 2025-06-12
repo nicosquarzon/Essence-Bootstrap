@@ -9,7 +9,8 @@
 </head>
 <body>
     
-     <header class="row align-items-center justify-content-between pt-2 pb-4 pb-md-2 encabezado">
+    <!-- Encabezado con Bootstrap y Css -->
+    <header class="row align-items-center justify-content-between pt-2 pb-4 pb-md-2 px-md-3 encabezado">
         <div class="col-12 col-md-3 text-center text-md-start mb-2 mb-md-0">
             <img src="imagenes/Logo.png" class="img-fluid logo-header mx-auto d-block w-50" alt="Logo">
         </div>
@@ -19,7 +20,7 @@
             <ul class="nav">
                 <li class="nav-item px-1"><a class="nav-link" href="index.html">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Tratamientos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
             </ul>
         
             <!-- Botón de agenda -->
@@ -29,17 +30,44 @@
         </div>
     </header>
 
-    <div class="container-fluid col-12 pt-5 row fondo-uno mx-auto justify-content-around align-items-center text-center">
-
-        <div class="col-12 col-md-4 pb-3 pb-md-0">
-            <h2>Profesional uno</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat voluptatibus voluptate, nesciunt laborum odit expedita, voluptatum ut nam quod magnam mollitia dignissimos voluptas, quaerat repellat fugit. Quis doloremque atque hic.</p>
+    <main class="segunda__seccion">
+        <div class="columna__uno">
+            <div class="texto__col">
+                <h2 class="subti__pro">Profesional 1</h2>
+                <p class="parra__pro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur sint fugit velit, veritatis iste, deleniti quasi nesciunt qui magni officia ipsam mollitia facilis, blanditiis natus eligendi. Id, quibusdam hic.</p>
+            </div>
+            <img src="imagenes/Profesionales/profesional-1.png" class="img__pro" alt="Profesional 1">
         </div>
-        <img src="imagenes/Profesionales/profesional-1.jpg" class="img-fluid col-12 col-md-4" alt="Profesional uno">
-            
-    <div>
+        <div class="columna__dos">
+            <div class="texto__col">
+                <h2 class="subti__pro">Profesional 2</h2>
+                <p class="parra__pro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius hic accusamus veritatis magnam quo unde earum optio odit, nemo, alias aliquam illum. In quae nemo nam eos ducimus rerum?</p>
+            </div>
+            <img src="imagenes/Profesionales/profesional-2.png" class="img__pro" alt="Profesional 2">
+        </div>
+    </main>
 
-
+    <footer class="footer__color footer__css">
+        <div class="grid__contacto">
+            <div class="obj__grid">
+                <img src="imagenes/Iconos/instagram.png" alt="Instagram">
+                <p class="info">@essence.beautyandrelax</p>
+            </div>
+            <div class="obj__grid">
+                <img src="imagenes/Iconos/whatsapp.png" alt="Whatsapp">
+                <p class="info">+54 9 341 304-1269</p>
+            </div>
+            <div class="obj__grid">
+                <img src="imagenes/Iconos/telefono.png" alt="Teléfono fijo">
+                <p class="info">341 238-3018</p>
+            </div>
+            <div class="obj__grid">
+                <img src="imagenes/Iconos/ubicacion.png" alt="Ubicación">
+                <p class="info">Catamarca 1573 (PB), Rosario, Santa Fe</p>
+            </div>
+        </div>
+        <h3 class="der">Todos los derechos reservados.</h3>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
