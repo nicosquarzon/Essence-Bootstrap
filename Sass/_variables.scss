@@ -1,0 +1,65 @@
+// Variables de colores
+$color-primario: #311745;
+$color-secundario: #926DA5;
+$color-tres: #E69CBA;
+$color-cuatro: #F4B3C7;
+$color-cinco: #ffffff;
+
+// Bucle de clases de sombra dinámica
+@for $i from 1 through 5 {
+  .shadow-#{$i} {
+    box-shadow: 0 #{2 * $i}px #{4 * $i}px rgba(0, 0, 0, 0.2);
+  }
+}
+
+// Mixin para efectos de zoom en hover
+@mixin hover-zoom($scale: 1.1) {
+  transform: scale($scale);
+  z-index: 2;
+  position: relative;
+  filter: blur(0);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+// Placeholder para imágenes modo retrato
+%portrait-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;  
+  aspect-ratio: 4 / 3;  
+  overflow: hidden;
+}
+
+// Placeholder para imágenes con transición suave
+%img-transition {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  display: block;
+  width: 100%;
+}
+
+// Placeholder para imagen cuadrada
+%square-image {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+// Mixin para crear grids
+@mixin grid($columnas, $filas, $gap){
+  display: grid;
+  grid-template-columns: repeat($columnas, 1fr);
+  grid-template-rows: repeat($filas, 1fr);
+  gap: $gap;
+  justify-content: center;
+}
+
+// Mixin para flex en columna
+@mixin flex-columna($top, $bottom) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+

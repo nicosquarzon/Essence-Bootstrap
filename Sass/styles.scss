@@ -1,0 +1,439 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Estilos de textos */
+h2{
+    color: $color-primario !important;
+    text-shadow: 2px 2px 4px #bfafbc;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h3{
+    color: $color-cinco !important;
+}
+
+p{
+    color: $color-cinco !important;
+}
+
+.titulo{
+    font-size: 2.4rem;
+    color: $color-primario !important;
+}
+
+/* Estilo del header */
+.fondo-personalizado{
+    background-image: url(../imagenes/Fondo.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+header{
+
+    .logo-header{
+        max-width: 600px !important;
+        min-width: 200px !important;
+        height: auto;
+    }
+
+    .nav-link{
+        color: $color-cinco !important;
+        text-shadow: 2px 2px 4px $color-primario;
+
+        .nav-item{
+            font-size: 1.2rem !important;
+        }
+    }
+
+    .nav-link:hover{
+        color: $color-primario !important;
+    }
+
+    .tit__contacto{
+        padding-top: 64px;
+        padding-bottom: 28px;
+        font-size: 48px;
+        color: $color-primario;
+        text-shadow: 1px 1px 3px $color-secundario;
+    }
+}
+
+.btn-custom{
+    background-color: $color-cinco !important; 
+    color: $color-secundario !important;
+}
+
+.btn-custom:hover {
+    background-color: $color-secundario !important;
+    color: $color-cinco !important;
+}
+
+.encabezado{
+    background-image: url(../imagenes/Fondo__Secundario.png);
+    background-size: cover;
+    text-align: center;
+}
+
+/* Estilo del footer */
+footer{
+    background-color: $color-primario;
+    @include flex-columna(0px, 0px);
+
+    .footer__css{
+        background-color: $color-primario;
+        @include flex-columna(0px, 0px);
+    }
+
+    .grid__contacto{
+        @include grid(1, 4, 12px);
+        padding-top: 24px;
+
+        .obj__grid{
+            @include flex-columna(0px, 0px);
+            gap: 8px;
+        }
+    }
+
+    .der{
+        font-size: 12px;
+        text-align: center;
+        padding-bottom: 12px;
+    }
+}
+
+/* Estilos de sub-página Nosotros */
+.segunda__seccion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .columna__uno{
+        background: linear-gradient(90deg, $color-tres 0%, $color-secundario 100%);
+        @include flex-columna(30px, 0px);
+        gap: 26px;
+    }
+
+    .columna__dos{
+        background: linear-gradient(90deg, $color-secundario 0%, $color-tres 100%);
+        @include flex-columna(30px, 0px);
+        gap: 26px;
+    }
+
+    .subti__pro{
+        font-size: 40px;
+        padding-bottom: 12px;
+    }
+
+    .parra__pro{
+        font-size: 24px;
+        margin: 16px;
+    }
+
+    .img__pro{
+        max-width: 55vh;
+    }
+    
+}
+
+/* Estilos de contactos */
+.info__contacto{
+    @include flex-columna(48px, 48px);
+
+    .info__cont{
+        @include flex-columna(18px, 18px);
+
+        .icon{
+            max-width: 64px;
+        }
+
+        .tit__icon{
+            color: $color-secundario !important;
+            padding-top: 16px;
+        }
+
+        .info__icon{
+            color: $color-primario !important;
+            font-size: 24px;
+            text-shadow: none !important;
+            padding-top: 8px;
+        }
+    } 
+}
+
+.ubi__mapa{
+    @include flex-columna(30px, 62px);
+        gap: 25px;
+        background: $color-secundario;
+
+        .tit__mapa{
+            color: $color-cinco !important;
+            text-shadow: none;
+        }
+
+        .mapa{
+            width: 100%
+        }
+}
+
+.cita{
+    @include flex-columna(48px, 48px);
+    gap: 32px;
+    background: $color-tres;
+    background: linear-gradient(0deg, $color-tres 0%, $color-cuatro 100%);
+
+    .tit__cit{
+        color: $color-primario !important;
+        text-shadow: none !important;
+    }
+
+    .subtit__cit{
+        color: $color-cinco !important;
+        text-shadow: none !important;
+    }
+}
+
+// Grid de Instagram (En Index y en Contactos)
+.ig__contacto{
+    @include flex-columna(36px, 0px);
+    gap: 16px;
+    text-align: center;
+        .tit__ig{
+            font-size: 48px;
+        }
+
+        .grid__ig{
+            @include grid(1, 3, 16px);
+            max-width: 70%;
+            padding-top: 24px;
+            padding-bottom: 48px;
+
+            .foto__ig{
+                max-width: 100%;
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 12px;
+                @extend .shadow-2;
+                @extend %img-transition;
+                @extend %square-image;
+
+                &:hover{
+                    @include hover-zoom();
+                }
+            }
+
+            &:hover img {
+                filter: blur(4px);
+                transform: scale(1);
+            }
+        }
+}
+
+// Estilos de Tratamientos
+.tratamiento-rvs,
+.tratamiento{
+    @include flex-columna(16px, 16px);
+    text-align: center;
+    border-top: 1px solid #b1b1b1;
+    border-bottom: 1px solid #b1b1b1;
+    gap: 25px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    img{
+        @extend %portrait-image;
+        width: 90%;
+        @extend .shadow-2;
+    }
+
+    .subti{
+        color: $color-secundario !important;
+    }
+}
+
+
+/* Adaptación a diferentes tamaños de pantalla */
+
+/* Para celulares y tablets */
+@media (max-width: 1024px) {
+    .foto__pc {
+        display: none !important;
+    }
+
+    .square-image{
+        max-width: 70% !important;
+    }
+
+    .columna__uno{
+        flex-direction: column;
+    }
+
+}
+
+/* Para tablets y pcs */
+@media (min-width: 768px){
+    .grid__contacto{
+        @include grid(2, 2, 50px);
+    }
+    
+    .info{
+        font-size: 20px !important;
+    }
+
+    .der{
+        font-size: 20px !important;
+        padding-top: 16px;
+    }
+
+    .tratamiento {
+        h2{
+            font-size: 40px;
+        }
+    }
+}
+
+/* Solo para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 72px !important;
+    }
+
+    p {
+        font-size: 32px !important;
+    }
+}
+
+/* Solo para pcs */
+@media (min-width: 1024px) {
+
+    h1 {
+        font-size: 60px !important;
+    }
+
+    p {
+        font-size: 26px !important;
+    }
+
+    .nav-item{
+        font-size: 1.4rem !important;
+    }
+
+    .btn-custom{
+        background-color: $color-cinco !important; 
+        color: $color-primario !important;
+        font-size: 2rem;
+        padding: 0.8rem 1.2rem !important
+    }
+
+    .vid {
+        width: 60%; 
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .fondo-personalizado {
+        height: 100vh !important;
+    }
+
+    .segunda__seccion{
+            .columna__uno{
+            flex-direction: row;
+            justify-content: space-around;
+                .texto__col{
+                    max-width: 40%;
+                }
+            }
+
+            .columna__dos{
+            flex-direction: row-reverse;
+            justify-content: space-around;
+                .texto__col{
+                    max-width: 40%;
+                }
+            }
+        }
+
+    footer{
+        .grid__contacto{
+            @include grid(2, 2, 35px);
+            padding-top: 28px;
+                .obj__grid{
+                    flex-direction: row;
+                    gap: 20px;
+                }
+            }
+    }
+    
+    .ig__contacto{
+        .grid__ig{
+            @include grid(3, 2, 16px)
+        }
+    }
+
+    .info__contacto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly
+    }
+
+    .tit__mapa{
+        font-size: 40px;
+    }
+
+    .tratamiento {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 300px;
+        padding-right: 300px;
+        img {
+            max-width: 45%;
+        }
+    }
+
+    .tratamiento-rvs {
+        flex-direction: row-reverse;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

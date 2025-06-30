@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Tratamientos</title>
     <link rel="stylesheet" href="Sass/styles.css">
 
     <!-- Librerías -->
@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    
+
     <!-- Encabezado con Bootstrap y Css -->
     <header class="row align-items-center justify-content-between pt-2 pb-4 pb-md-2 px-md-3 encabezado">
         <div class="col-12 col-md-3 text-center text-md-start mb-2 mb-md-0">
@@ -23,7 +23,7 @@
             <!-- Enlaces -->
             <ul class="nav">
                 <li class="nav-item px-1"><a class="nav-link" href="index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="tratamientos.html">Tratamientos</a></li>
+                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                 <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
             </ul>
         
@@ -32,29 +32,38 @@
                 AGENDA VIRTUAL
             </a>
         </div>
-        <h1 class="tit__contacto">Nosotros</h1>
+        <h1 class="tit__contacto">Tratamientos</h1>
     </header>
 
-    <!-- Main de página -->
-    <main class="segunda__seccion">
+    <main>
 
-        <!-- Primer profesional -->
-        <div class="columna__uno">
-            <div class="texto__col">
-                <h2 class="subti__pro animate__animated animate__fadeInLeft">Marina Esquivel</h2>
-                <p class="parra__pro animate__animated animate__fadeInLeft">Cosmiatra Profesional con años de experiencia en tratamientos faciales y corporales que combinan ciencia, sensibilidad y resultados visibles. Su formación continua y enfoque personalizado le permiten brindar una atención única, pensada para realzar la belleza natural de cada persona.</p>
+        <!-- Listado de tratamientos (SOLO MANICURÍA DESARROLLADO) -->
+        <div class="tratamiento animate__animated animate__fadeInLeft">
+            <img src="imagenes/Tratamientos/Manicuría.jpg" alt="Tratamiento de manicuría">
+            <div>
+                <h2>Manicuría</h2>
+                <p class="subti">¡Es momento de embellecer tus manos!</p>
+                <a href="manicuria.html"><div class="btn btn-custom">Conocer más</div></a href="manicuria.html">
             </div>
-            <img src="imagenes/Profesionales/profesional-1.png" class="img__pro animate__animated animate__fadeInRight" alt="Profesional 1">
+        </div>
+        
+        <div class="tratamiento tratamiento-rvs animate__animated animate__fadeInRight animate__delay-1s">
+            <img src="imagenes/Tratamientos/Masajes.jpg" alt="Tratamiento de masajes">
+            <div>
+                <h2>Masajes</h2>
+                <p class="subti">Para que puedas conseguir tu momento de paz...</p>
+            </div>
+        </div>
+        
+        
+        <div class="tratamiento animate__animated animate__fadeInLeft animate__delay-2s">
+            <img src="imagenes/Tratamientos/Facial.jpg" alt="Tratamientos faciales y corporales">
+            <div>
+                <h2>Faciales y corporales</h2>
+                <p class="subti">Todo tipo de tratamientos para rejuvenecar la piel.</p>
+            </div>
         </div>
 
-        <!-- Segundo profesional -->
-        <div class="columna__dos">
-            <div class="texto__col">
-                <h2 class="subti__pro animate__animated animate__fadeInRight animate__delay-2s">Analía Pendino</h2>
-                <p class="parra__pro animate__animated animate__fadeInRight animate__delay-2s">Manicura Profesional especializada en manicura tradicional, semipermanente y cuidado integral de manos, su trabajo refleja elegancia, higiene impecable y una atención totalmente personalizada.</p>
-            </div>
-            <img src="imagenes/Profesionales/profesional-2.png" class="img__pro animate__animated animate__fadeInLeft animate__delay-2s" alt="Profesional 2">
-        </div>
     </main>
 
     <!-- Footer -->
