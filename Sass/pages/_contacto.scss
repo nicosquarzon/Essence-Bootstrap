@@ -1,0 +1,57 @@
+/* Estilos de sub-página contactos */
+
+.info__contacto{
+    @include flex-columna(48px, 48px);
+
+    .info__cont{
+        @include flex-columna(18px, 18px);
+
+        .icon{
+            max-width: 64px;
+        }
+
+        .tit__icon{
+            color: $color-secundario !important;
+            padding-top: 16px;
+        }
+
+        .info__icon{
+            color: $color-primario !important;
+            font-size: 24px;
+            text-shadow: none !important;
+            padding-top: 8px;
+        }
+    } 
+}
+
+.ubi__mapa{
+    @include flex-columna(30px, 62px);
+        gap: 25px;
+        background: $color-secundario;
+
+        .tit__mapa{
+            color: $color-cinco !important;
+            text-shadow: none;
+        }
+
+        .mapa{
+            width: 100%
+        }
+}
+
+.cita{
+    @include flex-columna(48px, 48px);
+    gap: 32px;
+    background: $color-tres;
+    background: linear-gradient(0deg, $color-tres 0%, $color-cuatro 100%);
+
+    .tit__cit{
+        color: $color-primario !important;
+        text-shadow: none !important;
+    }
+
+    .subtit__cit{
+        color: $color-cinco !important;
+        text-shadow: none !important;
+    }
+}

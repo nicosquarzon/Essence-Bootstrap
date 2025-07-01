@@ -1,0 +1,34 @@
+/* Estilos de sub-página Nosotros */
+
+.segunda__seccion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .columna__uno{
+        background: linear-gradient(90deg, $color-tres 0%, $color-secundario 100%);
+        @include flex-columna(30px, 0px);
+        gap: 26px;
+    }
+
+    .columna__dos{
+        background: linear-gradient(90deg, $color-secundario 0%, $color-tres 100%);
+        @include flex-columna(30px, 0px);
+        gap: 26px;
+    }
+
+    .subti__pro{
+        font-size: 40px;
+        padding-bottom: 12px;
+    }
+
+    .parra__pro{
+        font-size: 24px;
+        margin: 16px;
+    }
+
+    .img__pro{
+        max-width: 55vh;
+    }
+    
+}

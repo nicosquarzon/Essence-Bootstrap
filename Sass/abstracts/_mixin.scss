@@ -1,0 +1,27 @@
+// Mixin para efectos de zoom en hover
+@mixin hover-zoom($scale: 1.1) {
+  transform: scale($scale);
+  z-index: 2;
+  position: relative;
+  filter: blur(0);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+// Mixin para crear grids
+@mixin grid($columnas, $filas, $gap){
+  display: grid;
+  grid-template-columns: repeat($columnas, 1fr);
+  grid-template-rows: repeat($filas, 1fr);
+  gap: $gap;
+  justify-content: center;
+}
+
+// Mixin para flex en columna
+@mixin flex-columna($top, $bottom) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: $top;
+  padding-bottom: $bottom;
+}

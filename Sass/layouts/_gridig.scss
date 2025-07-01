@@ -1,0 +1,37 @@
+// Grid de Instagram (En Index y en Contactos)
+
+.ig__contacto{
+    @include flex-columna(36px, 0px);
+    gap: 16px;
+    text-align: center;
+        .tit__ig{
+            font-size: 48px;
+        }
+
+        .grid__ig{
+            @include grid(1, 3, 16px);
+            max-width: 70%;
+            padding-top: 24px;
+            padding-bottom: 48px;
+
+            .foto__ig{
+                max-width: 100%;
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 12px;
+                @extend .shadow-2;
+                @extend %img-transition;
+                @extend %square-image;
+
+                &:hover{
+                    @include hover-zoom();
+                }
+            }
+
+            &:hover img {
+                filter: blur(4px);
+                transform: scale(1);
+            }
+        }
+}

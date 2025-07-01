@@ -1,0 +1,143 @@
+/* Adaptación a diferentes tamaños de pantalla */
+
+/* Para celulares y tablets */
+@media (max-width: 1024px) {
+    .foto__pc {
+        display: none !important;
+    }
+
+    .square-image{
+        max-width: 70% !important;
+    }
+
+    .columna__uno{
+        flex-direction: column;
+    }
+
+}
+
+/* Para tablets y pcs */
+@media (min-width: 768px){
+    .grid__contacto{
+        @include grid(2, 2, 50px);
+    }
+    
+    .info{
+        font-size: 20px !important;
+    }
+
+    .der{
+        font-size: 20px !important;
+        padding-top: 16px;
+    }
+
+    .tratamiento {
+        h2{
+            font-size: 40px;
+        }
+    }
+}
+
+/* Solo para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 72px !important;
+    }
+
+    p {
+        font-size: 32px !important;
+    }
+}
+
+/* Solo para pcs */
+@media (min-width: 1024px) {
+
+    h1 {
+        font-size: 60px !important;
+    }
+
+    p {
+        font-size: 26px !important;
+    }
+
+    .nav-item{
+        font-size: 1.4rem !important;
+    }
+
+    .btn-custom{
+        background-color: $color-cinco !important; 
+        color: $color-primario !important;
+        font-size: 2rem;
+        padding: 0.8rem 1.2rem !important
+    }
+
+    .vid {
+        width: 60%; 
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .fondo-personalizado {
+        height: 100vh !important;
+    }
+
+    .segunda__seccion{
+            .columna__uno{
+            flex-direction: row;
+            justify-content: space-around;
+                .texto__col{
+                    max-width: 40%;
+                }
+            }
+
+            .columna__dos{
+            flex-direction: row-reverse;
+            justify-content: space-around;
+                .texto__col{
+                    max-width: 40%;
+                }
+            }
+        }
+
+    footer{
+        .grid__contacto{
+            @include grid(2, 2, 35px);
+            padding-top: 28px;
+                .obj__grid{
+                    flex-direction: row;
+                    gap: 20px;
+                }
+            }
+    }
+    
+    .ig__contacto{
+        .grid__ig{
+            @include grid(3, 2, 16px)
+        }
+    }
+
+    .info__contacto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly
+    }
+
+    .tit__mapa{
+        font-size: 40px;
+    }
+
+    .tratamiento {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 300px;
+        padding-right: 300px;
+        img {
+            max-width: 45%;
+        }
+    }
+
+    .tratamiento-rvs {
+        flex-direction: row-reverse;
+    }
+}

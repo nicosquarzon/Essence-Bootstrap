@@ -1,0 +1,45 @@
+/* Estilo de los headers */
+
+.fondo-personalizado{
+    background-image: url(../imagenes/Fondo.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header{
+
+    // Estilo de navbar
+    .logo-header{
+        max-width: 600px !important;
+        min-width: 200px !important;
+        height: auto;
+    }
+
+    .nav-link{
+        color: $color-cinco !important;
+        text-shadow: 2px 2px 4px $color-primario;
+
+        .nav-item{
+            font-size: 1.2rem !important;
+        }
+    }
+
+    .nav-link:hover{
+        color: $color-primario !important;
+    }
+
+    .tit__contacto{
+        padding-top: 64px;
+        padding-bottom: 28px;
+        font-size: 48px;
+        color: $color-primario;
+        text-shadow: 1px 1px 3px $color-secundario;
+    }
+}
+
+.encabezado{
+    background-image: url(../imagenes/Fondo__Secundario.png);
+    background-size: cover;
+    text-align: center;
+}

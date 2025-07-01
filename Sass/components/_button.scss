@@ -1,0 +1,11 @@
+// Estilo de botón de agenda virtual
+
+.btn-custom{
+    background-color: $color-cinco !important; 
+    color: $color-secundario !important;
+}
+
+.btn-custom:hover {
+    background-color: $color-secundario !important;
+    color: $color-cinco !important;
+}

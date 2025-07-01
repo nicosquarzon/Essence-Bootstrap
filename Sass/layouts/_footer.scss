@@ -1,0 +1,27 @@
+/* Estilo de los footers */
+
+footer{
+    background-color: $color-primario;
+    @include flex-columna(0px, 0px);
+
+    .footer__css{
+        background-color: $color-primario;
+        @include flex-columna(0px, 0px);
+    }
+
+    .grid__contacto{
+        @include grid(1, 4, 12px);
+        padding-top: 24px;
+
+        .obj__grid{
+            @include flex-columna(0px, 0px);
+            gap: 8px;
+        }
+    }
+
+    .der{
+        font-size: 12px;
+        text-align: center;
+        padding-bottom: 12px;
+    }
+}

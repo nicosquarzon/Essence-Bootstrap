@@ -1,0 +1,13 @@
+// Variables de paleta de colores
+$color-primario: #311745;
+$color-secundario: #926DA5;
+$color-tres: #E69CBA;
+$color-cuatro: #F4B3C7;
+$color-cinco: #ffffff;
+
+// Bucle de clases de sombra
+@for $i from 1 through 5 {
+  .shadow-#{$i} {
+    box-shadow: 0 #{2 * $i}px #{4 * $i}px rgba(0, 0, 0, 0.2);
+  }
+}
