@@ -1,6 +1,8 @@
 # ✨ Essence, Beauty and Relax 
 
-Tercera entrega de Desarrollo Web. Programado en HTML y SASS con ayuda de el framework Bootstrap y la librería de animaciones Animate.css.
+Entrega final de Desarrollo Web. Programado en HTML y SASS con ayuda de el framework Bootstrap y la librería de animaciones Animate.css.
+
+Imágenes y videos comprimidos para menor espacio ocupado.
 
 ---
 
